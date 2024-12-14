@@ -1,0 +1,23 @@
+#bookingform {
+    color: #333333;
+    margin-bottom: 30vh;
+}
+
+#bookingform > label {
+    font-family: Cambria, Times, 'Times New Roman', serif;
+    font-size: 16pt;
+}
+
+#bookingform > input {
+    height: 2rem;
+    background-color: #EDEFEE;
+    border-radius: 0.5rem;
+    border: 0;
+}
+
+#bookingform > select {
+    height: 2rem;
+    background-color: #EDEFEE;
+    border-radius: 0.5rem;
+    border: 0;
+}

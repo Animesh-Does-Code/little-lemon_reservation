@@ -1,0 +1,297 @@
+.homepage {
+    display: grid;
+    align-items: center;
+    justify-self: center;
+    justify-items: center;
+    width: 100%;
+}
+
+#Hero {
+    display: grid;
+    background-color: #495E57;
+    width: 100%;
+    justify-items: center;
+}
+
+.hero-section {
+    display: grid;
+    color: white;
+    grid-template-columns: repeat(auto-fit, minmax(50px, auto));
+    grid-auto-flow: column;
+    margin-bottom: -2rem;
+    max-width: 1080px;
+}
+
+.hero-section-text {
+    display: grid;
+    margin-right: 10rem;
+    margin-bottom: 2rem;
+}
+
+#food_large {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    object-fit: cover;
+}
+
+#little-lemon-title {
+    font-family: Cambria, Times, 'Times New Roman', serif;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 3rem;
+}
+
+#location {
+    font-family: Cambria, Times, 'Times New Roman', serif;
+    font-size: 2.2rem;
+    margin: 0rem;
+}
+
+#little-lemon-description {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.specials-header {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, auto));
+    grid-auto-flow: column;
+    justify-items: center;
+    grid-gap: 30rem;
+}
+
+#reserve-button {
+    display: grid;
+    background-color: #f4ce14;
+    color: black;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    width: 150px;
+    height: 35px;
+    padding: 0.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    align-content: center;
+    text-align: center;
+}
+
+#menu-button {
+    display: grid;
+    background-color: #f4ce14;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+    width: 150px;
+    height: 35px;
+    padding: 0.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    align-content: center;
+    text-align: center;
+}
+
+
+#specials-title {
+    font-family: Cambria, Times, 'Times New Roman', serif;
+    margin-top: 5rem;
+    font-size: 3rem;
+}
+
+@media (max-width: 1280px) {
+    .item-container {
+        display: grid;
+        grid-auto-flow: row;
+        justify-items: center;
+    }
+}
+
+@media (min-width: 1281px) {
+    .item-container {
+        display: grid;
+        grid-gap: 10rem;
+        grid-template-columns: repeat(auto-fit, minmax(50px, auto));
+        justify-items: center;
+    }
+}
+
+
+
+div > article {
+    display: grid;
+    background-color: #EDEFEE;
+    border-radius: 1rem;
+    color: black;
+    margin-top: 2rem;
+    width: 23rem;
+    height: 35rem;
+}
+
+.item-price {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, auto));
+    grid-gap: 3rem;
+    margin-bottom: -2rem;
+}
+
+#item-description {
+    width: 20rem;
+    color: #495E57;
+    margin-left: 2rem;
+}
+
+.item-header {
+    font-family: Cambria, Times, 'Times New Roman', serif;
+    font-size: 16pt;
+    margin-left: 2rem;
+}
+
+#price {
+    font-family: Cambria, Times, 'Times New Roman', serif;
+    font-size: 16pt;
+    margin-left: 2rem;
+    color: #EE9972;
+}
+
+#item-description {
+    font-family: Cambria, Times, 'Times New Roman', serif;
+    font-size: 16pt;
+}
+
+.item-image {
+    width: 23rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    height: 14rem;
+    object-fit: cover;
+}
+
+#testimonials-section {
+    display: grid;
+    background-color: #333333;
+    width: 100%;
+    margin-top: 5rem;
+    justify-items: center;
+}
+
+#testimonials {
+    font-family: Cambria, Times, 'Times New Roman', serif;
+    font-size: 2.2rem;
+    color: white;
+}
+
+@media (max-width: 1280px) {
+    .reviews-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(auto-fit, minmax(50px, auto));
+        margin-inline: 5rem;
+        margin-bottom: 4rem;
+        grid-gap: 3rem;
+    }
+}
+
+@media (min-width: 1281px) {
+    .reviews-container {
+        display: grid;
+        grid-gap: 3rem;
+        margin-inline: 5rem;
+        margin-bottom: 4rem;
+        grid-template-columns: repeat(auto-fit, minmax(50px, auto));
+        grid-auto-flow: column;
+        justify-items: center;
+    }
+}
+
+.review-card {
+    display: grid;
+    background-color: #EDEFEE;
+    border-radius: 0.6rem;
+    grid-template-rows: repeat(auto-fit, minmax(50px, auto));
+    color: black;
+    margin-top: 2rem;
+    width: 18rem;
+    height: 18rem;
+}
+
+.review-card h6 {
+    font-size: 13pt;
+    margin: 0rem;
+}
+
+.review-card > h6 {
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.review-card > p {
+    margin-left: 1rem;
+}
+
+.profile-name {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, auto));
+    margin: 0rem;
+    grid-gap: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.profile-name > h6 {
+    margin-top: 4rem;
+}
+
+.profile {
+    width: 8rem;
+    object-fit: cover;
+}
+
+#About {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, auto));
+    justify-content: center;
+    justify-items: center;
+    max-width: 1080px;
+}
+
+.about-section {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(55px, auto));
+    grid-auto-flow: row;
+    font-family: Cambria, Times, 'Times New Roman', serif;
+    color: black;
+}
+
+.about-section > h1 {
+    font-size: 3rem;
+}
+
+.about-section > h4 {
+    font-size: 2.2rem;
+}
+
+.about-section > p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 4rem;
+    width: 70%;
+}
+
+.founders-img {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(55px, auto));
+    grid-gap: 5rem;
+}
+
+.founders-img > img {
+    width: 15rem;
+    height: 25rem;
+    object-fit: cover;
+    object-position: 75% 100%;
+    margin-block: 1rem;
+    margin-right: 10rem;
+}
+
+#founderA {
+    margin-top: 5rem;
+}

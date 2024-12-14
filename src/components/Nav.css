@@ -1,0 +1,30 @@
+nav {
+    display: grid;
+    height: 80px;
+    grid-template-columns: repeat(2, minmax(120px, auto));
+    grid-gap: 5rem;
+    align-items: center;
+    justify-self: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.nav-container {
+    display: grid;
+    width: 600px;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(70px, auto));
+    font-family: sans-serif;
+    font-weight: 600;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#nav-button {
+    padding: 15px;
+}
