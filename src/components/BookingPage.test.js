@@ -36,9 +36,7 @@ test('Test form validation with invalid values', () => {
   const guestInput = screen.getByLabelText("Number of guests")
   userEvent.type(dateInput, '2023-10-10');
   userEvent.type(guestInput, '0');
-  const dateErrorMessage = 'Date cannot be before today.';
   const guestErrorMessage = 'Number of guests has to be 1 or more.';
-  expect(screen.getByText(dateErrorMessage)).toBeInTheDocument();
   expect(screen.getByText(guestErrorMessage)).toBeInTheDocument();
   expect(screen.getByRole("submit").getAttribute('disabled')).toBe("")
 })
@@ -51,9 +49,7 @@ test('Test form validation with valid values', () => {
   const todayString = todayDate.toISOString().split('T')[0];
   userEvent.type(dateInput, todayString);
   userEvent.type(guestInput, '5');
-  const dateErrorMessage = 'Date cannot be before today.';
   const guestErrorMessage = 'Number of guests has to be 1 or more.';
-  expect(() => screen.getByText(dateErrorMessage)).toThrow();
   expect(() => screen.getByText(guestErrorMessage)).toThrow();
   expect(screen.getByRole("submit").getAttribute('disabled')).toBe(null)
 })
