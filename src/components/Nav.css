@@ -1,12 +1,27 @@
-nav {
-    display: grid;
-    height: 80px;
-    grid-template-columns: repeat(2, minmax(120px, auto));
-    grid-gap: 5rem;
-    align-items: center;
-    justify-self: center;
-    justify-items: center;
-    justify-content: center;
+@media (min-width: 720px) {
+    nav {
+        display: grid;
+        height: 80px;
+        grid-template-columns: repeat(2, minmax(120px, auto));
+        grid-gap: 5rem;
+        align-items: center;
+        justify-self: center;
+        justify-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 720px) {
+    nav {
+        display: grid;
+        height: 80px;
+        grid-template-columns: repeat(2, minmax(120px, auto));
+        grid-gap: 0rem;
+        align-items: center;
+        justify-self: center;
+        justify-content: center;
+        margin-left: 1rem;
+    }
 }
 
 .nav-container {

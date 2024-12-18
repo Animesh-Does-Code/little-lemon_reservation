@@ -1,6 +1,7 @@
 #bookingform {
     color: #333333;
     margin-bottom: 30vh;
+    width: 100%;
 }
 
 #bookingform > label {

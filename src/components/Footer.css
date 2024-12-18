@@ -40,3 +40,9 @@ footer {
     justify-items: center;
     justify-content: center;
 }
+
+#littlelemon-logo {
+    width: 20rem;
+    margin-right: -10rem;
+    margin-top: 1rem;
+}
