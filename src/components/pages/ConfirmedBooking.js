@@ -4,7 +4,7 @@ import "./ConfirmedBooking.css"
 const ConfirmedBooking = () => {
     return (
         <>
-        <h1>Your booking has been confirmed!</h1>
+          <h1 id="confirmedbooking">Your booking has been confirmed!</h1>
         </>
     )
 }

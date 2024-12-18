@@ -3,13 +3,13 @@
     align-items: center;
     justify-self: center;
     justify-items: center;
-    width: 100%;
+    width: 200%;
 }
 
 #Hero {
     display: grid;
     background-color: #495E57;
-    width: 100%;
+    width: 200%;
     justify-items: center;
 }
 
