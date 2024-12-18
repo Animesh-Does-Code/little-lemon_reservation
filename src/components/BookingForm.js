@@ -3,22 +3,11 @@ import { useNavigate } from "react-router-dom";
 
 function BookingForm({OnFormSubmit, AvailableTimes, changeOccasion, changeTime, changeGuests, changeDate, date, time, occasion, guests}) {
     const navigate = useNavigate()
-    const [dateErrors, setDateErrors] = useState({});
     const [guestErrors, setGuestErrors] = useState({});
+    const currentDate = new Date().toISOString().split('T')[0];
 
     function handleDateChange(e) {
-        const selected = e.target.value
-        const dateErrors = {}
-        const currentDate = new Date().toISOString().split('T')[0];
-
-        if (selected < currentDate) {
-            dateErrors.date = 'Date cannot be before today.';
-        }
-
-        setDateErrors(dateErrors);
-
         changeDate(e);
-        return Object.keys(dateErrors).length === 0;
     }
 
     function handleGuestsChange(e) {
@@ -44,10 +33,10 @@ function BookingForm({OnFormSubmit, AvailableTimes, changeOccasion, changeTime, 
 
     return (
         <>
+            <h1 style={{fontFamily: "serif"}}>Reserve a Table</h1>
             <form id="bookingform" style={{display: 'grid', maxWidth: 200 + 'px', gap: 20 + 'px', padding: 1 + 'rem'}} onSubmit={formSubmit}>
                 <label htmlFor="res-date">Choose date</label>
-                <input type="date" id="res-date" value={date} onChange={handleDateChange}/>
-                {dateErrors.date && <p style={{ color: 'red' }}>{dateErrors.date}</p>}
+                <input type="date" id="res-date" value={date} min={currentDate} onChange={handleDateChange}/>
                 <label htmlFor="res-time">Choose time</label>
                 <select id="res-time " value={time} onChange={changeTime}>=
                     <AvailableTimes />
@@ -60,7 +49,7 @@ function BookingForm({OnFormSubmit, AvailableTimes, changeOccasion, changeTime, 
                     <option>Birthday</option>
                     <option>Anniversary</option>
                 </select>
-                <input type="submit" role="submit" value="Make Your reservation" aria-label="On Click" disabled={guestErrors.guests || dateErrors.date || date === "0"} ></input>
+                <input type="submit" role="submit" value="Make Your reservation" aria-label="On Click" disabled={guestErrors.guests || date === "0"} ></input>
             </form>
         </>
     )
